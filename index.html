@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Full Stack Developer</title>
-    <meta name="description" content="Professional portfolio of a Full Stack Developer with 2 years of experience. Explore my projects, skills, and experience.">
-    
+    <meta name="description"
+        content="Professional portfolio of a Full Stack Developer with 2 years of experience. Explore my projects, skills, and experience.">
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    
+
     <!-- Tailwind CSS (Play CDN for quick setup + Custom Config) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -36,13 +38,14 @@
 
     <!-- Icons: FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- GSAP for Animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 
-<body class="bg-bgLight text-textLight dark:bg-bgDark dark:text-textDark antialiased min-h-screen flex flex-col relative transition-colors duration-300">
+<body
+    class="bg-bgLight text-textLight dark:bg-bgDark dark:text-textDark antialiased min-h-screen flex flex-col relative transition-colors duration-300">
 
     <!-- Navbar -->
     <nav class="fixed w-full z-50 transition-all duration-300 glass-nav" id="navbar">
@@ -51,38 +54,57 @@
                 <!-- Logo -->
                 <a href="#hero" class="text-2xl font-bold text-slate-800 dark:text-white flex items-center gap-2 group">
                     <span class="text-primary">&lt;/&gt;</span>
-                    <span class="group-hover:text-primary transition-colors">Dev.Y</span>
+                    <span class="group-hover:text-primary transition-colors">Yug.Dev</span>
                 </a>
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
                     <ul class="flex space-x-8 text-sm font-medium">
-                        <li><a href="#about" class="nav-link text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">About</a></li>
-                        <li><a href="#techstack" class="nav-link text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">Skills</a></li>
-                        <li><a href="#projects" class="nav-link text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">Projects</a></li>
-                        <li><a href="#experience" class="nav-link text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">Experience</a></li>
-                        <li><a href="#contact" class="nav-link text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#about"
+                                class="nav-link text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">About</a>
+                        </li>
+                        <li><a href="#techstack"
+                                class="nav-link text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">Skills</a>
+                        </li>
+                        <li><a href="#projects"
+                                class="nav-link text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">Projects</a>
+                        </li>
+                        <li><a href="#experience"
+                                class="nav-link text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">Experience</a>
+                        </li>
+                        <li><a href="#certifications"
+                                class="nav-link text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">Certifications</a>
+                        </li>
+                        <li><a href="#contact"
+                                class="nav-link text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">Contact</a>
+                        </li>
                     </ul>
-                    
+
                     <!-- Theme Toggle -->
-                    <button id="themeToggle" class="p-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors" aria-label="Toggle Dark Mode">
+                    <button id="themeToggle"
+                        class="p-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors"
+                        aria-label="Toggle Dark Mode">
                         <i class="fa-solid fa-sun text-xl hidden dark:block"></i>
                         <i class="fa-solid fa-moon text-xl block dark:hidden"></i>
                     </button>
-                    
+
                     <!-- CTA -->
-                    <a href="#" class="px-5 py-2.5 bg-primary hover:bg-primaryDark text-white font-medium rounded-lg transition-all shadow-lg hover:shadow-primary/50 hover:-translate-y-0.5">
+                    <a href="https://drive.google.com/file/d/19oue4rNPLgHw6n3xYCPH-HPNGOUIpzwH/view?usp=drive_link"
+                        class="px-5 py-2.5 bg-primary hover:bg-primaryDark text-white font-medium rounded-lg transition-all shadow-lg hover:shadow-primary/50 hover:-translate-y-0.5">
                         Resume
                     </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden flex items-center space-x-4">
-                    <button id="themeToggleMobile" class="p-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300" aria-label="Toggle Dark Mode">
+                    <button id="themeToggleMobile"
+                        class="p-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300"
+                        aria-label="Toggle Dark Mode">
                         <i class="fa-solid fa-sun text-xl hidden dark:block"></i>
                         <i class="fa-solid fa-moon text-xl block dark:hidden"></i>
                     </button>
-                    <button id="mobileMenuBtn" class="text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white">
+                    <button id="mobileMenuBtn"
+                        class="text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white">
                         <i class="fa-solid fa-bars text-3xl"></i>
                     </button>
                 </div>
@@ -90,14 +112,27 @@
         </div>
 
         <!-- Mobile Menu Panel -->
-        <div id="mobileMenu" class="hidden md:hidden absolute top-20 left-0 w-full bg-surfaceLight dark:bg-surfaceDark border-b origin-top shadow-xl border-slate-200 dark:border-slate-800">
+        <div id="mobileMenu"
+            class="hidden md:hidden absolute top-20 left-0 w-full bg-surfaceLight dark:bg-surfaceDark border-b origin-top shadow-xl border-slate-200 dark:border-slate-800">
             <ul class="flex flex-col p-4 space-y-4 text-center font-medium">
-                <li><a href="#about" class="mobile-link block text-slate-700 dark:text-slate-300 hover:text-primary">About</a></li>
-                <li><a href="#techstack" class="mobile-link block text-slate-700 dark:text-slate-300 hover:text-primary">Skills</a></li>
-                <li><a href="#projects" class="mobile-link block text-slate-700 dark:text-slate-300 hover:text-primary">Projects</a></li>
-                <li><a href="#experience" class="mobile-link block text-slate-700 dark:text-slate-300 hover:text-primary">Experience</a></li>
-                <li><a href="#contact" class="mobile-link block text-slate-700 dark:text-slate-300 hover:text-primary">Contact</a></li>
-                <li><a href="#" class="mobile-link inline-block px-5 py-2 bg-primary text-white rounded-lg w-full mt-2">Download Resume</a></li>
+                <li><a href="#about"
+                        class="mobile-link block text-slate-700 dark:text-slate-300 hover:text-primary">About</a></li>
+                <li><a href="#techstack"
+                        class="mobile-link block text-slate-700 dark:text-slate-300 hover:text-primary">Skills</a></li>
+                <li><a href="#projects"
+                        class="mobile-link block text-slate-700 dark:text-slate-300 hover:text-primary">Projects</a>
+                </li>
+                <li><a href="#experience"
+                        class="mobile-link block text-slate-700 dark:text-slate-300 hover:text-primary">Experience</a>
+                </li>
+                <li><a href="#certifications"
+                        class="mobile-link block text-slate-700 dark:text-slate-300 hover:text-primary">Certifications</a>
+                </li>
+                <li><a href="#contact"
+                        class="mobile-link block text-slate-700 dark:text-slate-300 hover:text-primary">Contact</a></li>
+                <li><a href="https://drive.google.com/file/d/19oue4rNPLgHw6n3xYCPH-HPNGOUIpzwH/view?usp=drive_link"
+                        class="mobile-link inline-block px-5 py-2 bg-primary text-white rounded-lg w-full mt-2">Resume</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -106,26 +141,35 @@
         <!-- Hero Section -->
         <section id="hero" class="min-h-screen flex items-center pt-20 overflow-hidden relative">
             <!-- Background Elements -->
-            <div class="absolute top-1/4 -left-20 w-72 h-72 bg-primary/20 rounded-full blur-3xl z-0 animation-blob"></div>
-            <div class="absolute bottom-1/4 -right-20 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl z-0 animation-blob animation-delay-2000"></div>
-            
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col-reverse md:flex-row items-center justify-between gap-12">
-                
+            <div class="absolute top-1/4 -left-20 w-72 h-72 bg-primary/20 rounded-full blur-3xl z-0 animation-blob">
+            </div>
+            <div
+                class="absolute bottom-1/4 -right-20 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl z-0 animation-blob animation-delay-2000">
+            </div>
+
+            <div
+                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+
                 <div class="w-full md:w-3/5 space-y-6 text-center md:text-left mt-8 md:mt-0 hero-text">
                     <p class="text-primary font-medium tracking-wide">Hi, my name is</p>
                     <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 dark:text-white leading-tight">
                         Yugal. <br>
-                        <span class="text-slate-500 dark:text-slate-400">I build <span id="typewriter"></span><span class="cursor"></span></span>
+                        <span class="text-slate-500 dark:text-slate-400">I build <span id="typewriter"></span><span
+                                class="cursor"></span></span>
                     </h1>
                     <p class="text-lg md:text-xl max-w-2xl text-slate-600 dark:text-slate-400 leading-relaxed">
-                        I'm a full-stack web developer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on creating responsive, accessible, and high-performance applications.
+                        I'm a full-stack web developer specializing in building (and occasionally designing) exceptional
+                        digital experiences. Currently, I'm focused on creating responsive, accessible, and
+                        high-performance applications.
                     </p>
-                    
+
                     <div class="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start pt-4">
-                        <a href="#projects" class="w-full sm:w-auto px-8 py-3.5 bg-primary hover:bg-primaryDark text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-primary/50 hover-glow">
+                        <a href="#projects"
+                            class="w-full sm:w-auto px-8 py-3.5 bg-primary hover:bg-primaryDark text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-primary/50 hover-glow">
                             Check out my work
                         </a>
-                        <a href="#contact" class="w-full sm:w-auto px-8 py-3.5 border-2 border-slate-300 dark:border-slate-700 hover:border-primary dark:hover:border-primary text-slate-700 dark:text-slate-300 hover:text-primary font-semibold rounded-lg transition-all">
+                        <a href="#contact"
+                            class="w-full sm:w-auto px-8 py-3.5 border-2 border-slate-300 dark:border-slate-700 hover:border-primary dark:hover:border-primary text-slate-700 dark:text-slate-300 hover:text-primary font-semibold rounded-lg transition-all">
                             Contact Me
                         </a>
                     </div>
@@ -134,12 +178,16 @@
                 <div class="w-3/4 sm:w-1/2 md:w-2/5 hero-image">
                     <div class="relative group">
                         <!-- Decorative border -->
-                        <div class="absolute inset-0 border-2 border-primary rounded-2xl translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300 -z-10"></div>
-                        <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Developer Workspace" class="rounded-2xl shadow-2xl object-cover w-full h-[350px] md:h-[450px] grayscale group-hover:grayscale-0 transition-all duration-500">
+                        <div
+                            class="absolute inset-0 border-2 border-primary rounded-2xl translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300 -z-10">
+                        </div>
+                        <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            alt="Developer Workspace"
+                            class="rounded-2xl shadow-2xl object-cover w-full h-[350px] md:h-[450px] grayscale group-hover:grayscale-0 transition-all duration-500">
                     </div>
                 </div>
             </div>
-            
+
             <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
                 <a href="#about" class="text-slate-400 hover:text-primary transition-colors">
                     <i class="fa-solid fa-chevron-down text-3xl"></i>
@@ -158,33 +206,44 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-lg text-slate-600 dark:text-slate-400">
                     <div class="space-y-6 gsap-fade-up delay-1">
                         <p>
-                            Hello! I enjoy creating things that live on the internet. My interest in web development started 2 years ago when I decided to try editing custom Tumblr themes — turns out hacking together HTML & CSS taught me a lot about responsive design!
+                            Hello! I enjoy creating things that live on the internet. My interest in web development
+                            started 2 years ago when I decided to try editing custom Tumblr themes — turns out hacking
+                            together HTML & CSS taught me a lot about responsive design!
                         </p>
                         <p>
-                            Fast-forward to today, and I've had the privilege of building products for startups, agencies, and large corporations. My main focus these days is building accessible, inclusive products and digital experiences.
+                            Fast-forward to today, and I've had the privilege of building products for startups,
+                            agencies, and large corporations. My main focus these days is building accessible, inclusive
+                            products and digital experiences.
                         </p>
                         <p>
-                            When I'm not at the computer, I'm usually exploring new tech trends, reading sci-fi novels, or hiking.
+                            Furthermore, I am always seeking to expand my technical horizon. For example, I have locally
+                            hosted Internet Information Services (IIS) on my personal computer to generate, test, and
+                            manage reports. When I'm not at the computer, I'm usually exploring new tech trends, reading
+                            sci-fi novels, or hiking.
                         </p>
                     </div>
-                    
+
                     <div class="gsap-feature-cards grid grid-cols-2 gap-4">
-                        <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+                        <div
+                            class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
                             <i class="fa-solid fa-code text-4xl text-primary mb-4"></i>
                             <h3 class="font-bold text-slate-900 dark:text-white mb-2">Frontend</h3>
                             <p class="text-sm">Crafting responsive, intuitive UIs with modern frameworks.</p>
                         </div>
-                        <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+                        <div
+                            class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
                             <i class="fa-solid fa-database text-4xl text-primary mb-4"></i>
                             <h3 class="font-bold text-slate-900 dark:text-white mb-2">Backend</h3>
                             <p class="text-sm">Building robust APIs and managing database architectures.</p>
                         </div>
-                        <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+                        <div
+                            class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
                             <i class="fa-solid fa-palette text-4xl text-primary mb-4"></i>
                             <h3 class="font-bold text-slate-900 dark:text-white mb-2">UI/UX</h3>
                             <p class="text-sm">Designing aesthetic, user-first interfaces.</p>
                         </div>
-                        <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+                        <div
+                            class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
                             <i class="fa-solid fa-rocket text-4xl text-primary mb-4"></i>
                             <h3 class="font-bold text-slate-900 dark:text-white mb-2">Performance</h3>
                             <p class="text-sm">Optimizing load times and SEO for web applications.</p>
@@ -199,50 +258,110 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col items-center mb-16 text-center gsap-fade-up">
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">My Tech Stack</h2>
-                    <p class="text-slate-600 dark:text-slate-400 max-w-2xl">Technologies I've been working with recently to bring ideas to reality.</p>
+                    <p class="text-slate-600 dark:text-slate-400 max-w-2xl">Technologies I've been working with recently
+                        to bring ideas to reality.</p>
                 </div>
-                
+
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 gsap-stagger-grid">
                     <!-- Tech Item -->
-                    <div class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all">
+                    <div
+                        class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            alt="HTML5" class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all">
                         <span class="text-sm font-medium">HTML5</span>
                     </div>
-                    <div class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all">
+                    <div
+                        class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
+                            class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all">
                         <span class="text-sm font-medium">CSS3</span>
                     </div>
-                    <div class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all">
+                    <div
+                        class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="JavaScript" class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all">
                         <span class="text-sm font-medium">JavaScript</span>
                     </div>
-                    <div class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all">
+                    <div
+                        class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                            alt="React" class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all">
                         <span class="text-sm font-medium">React</span>
                     </div>
-                    <div class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all">
+                    <div
+                        class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                            alt="Tailwind CSS" class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all">
                         <span class="text-sm font-medium">Tailwind CSS</span>
                     </div>
-                    <div class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all">
+                    <div
+                        class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                            alt="Node.js" class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all">
                         <span class="text-sm font-medium">Node.js</span>
                     </div>
-                    <div class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all dark:invert">
+                    <div
+                        class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                            alt="Express"
+                            class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all dark:invert">
                         <span class="text-sm font-medium">Express</span>
                     </div>
-                    <div class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all">
+                    <div
+                        class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                            alt="MongoDB" class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all">
                         <span class="text-sm font-medium">MongoDB</span>
                     </div>
-                    <div class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all">
+                    <div
+                        class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
+                            class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all">
                         <span class="text-sm font-medium">Git</span>
                     </div>
-                    <div class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all">
+                    <div
+                        class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                            alt="Figma" class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all">
                         <span class="text-sm font-medium">Figma</span>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"
+                            alt="Oracle" class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-sm font-medium">Oracle (PL/SQL)</span>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                            alt="VS Code" class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-sm font-medium">VS Code</span>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+                            alt="Postman" class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-sm font-medium">Postman</span>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                            alt="Linux" class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-sm font-medium">Linux</span>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                            alt="Django"
+                            class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all dark:invert">
+                        <span class="text-sm font-medium">Django</span>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+                            alt="Flask"
+                            class="w-12 h-12 mb-3 grayscale group-hover:grayscale-0 transition-all dark:invert">
+                        <span class="text-sm font-medium">Flask</span>
                     </div>
                 </div>
             </div>
@@ -261,25 +380,40 @@
                     <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 project-card relative">
                         <div class="w-full lg:w-3/5 overflow-hidden rounded-xl shadow-xl group">
                             <div class="relative w-full pb-[60%]">
-                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="E-Commerce Dashboard" class="absolute inset-0 w-full h-full object-cover origin-center group-hover:scale-105 transition-transform duration-700">
-                                <div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-300"></div>
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                                    alt="E-Commerce Dashboard"
+                                    class="absolute inset-0 w-full h-full object-cover origin-center group-hover:scale-105 transition-transform duration-700">
+                                <div
+                                    class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-300">
+                                </div>
                             </div>
                         </div>
-                        <div class="w-full lg:w-2/5 flex flex-col items-start lg:items-end text-left lg:text-right relative z-10">
+                        <div
+                            class="w-full lg:w-2/5 flex flex-col items-start lg:items-end text-left lg:text-right relative z-10">
                             <p class="text-primary font-medium mb-2">Featured Project</p>
-                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 hover:text-primary transition-colors"><a href="#">E-Commerce Dashboard</a></h3>
-                            <div class="bg-slate-100 dark:bg-slate-800 p-6 rounded-xl shadow-md mb-6 lg:-ml-16 w-full lg:w-[calc(100%+4rem)] z-10 border border-slate-200 dark:border-slate-700">
-                                <p class="text-slate-600 dark:text-slate-300">A comprehensive full-stack admin dashboard for e-commerce platforms. Features include real-time sales tracking, inventory management, user analytics, and a beautiful dark mode UI.</p>
+                            <h3
+                                class="text-2xl font-bold text-slate-900 dark:text-white mb-6 hover:text-primary transition-colors">
+                                <a href="#">E-Commerce Dashboard</a></h3>
+                            <div
+                                class="bg-slate-100 dark:bg-slate-800 p-6 rounded-xl shadow-md mb-6 lg:-ml-16 w-full lg:w-[calc(100%+4rem)] z-10 border border-slate-200 dark:border-slate-700">
+                                <p class="text-slate-600 dark:text-slate-300">A comprehensive full-stack admin dashboard
+                                    for e-commerce platforms. Features include real-time sales tracking, inventory
+                                    management, user analytics, and a beautiful dark mode UI.</p>
                             </div>
-                            <ul class="flex flex-wrap gap-4 text-sm font-medium text-slate-500 dark:text-slate-400 mb-8 justify-start lg:justify-end w-full">
+                            <ul
+                                class="flex flex-wrap gap-4 text-sm font-medium text-slate-500 dark:text-slate-400 mb-8 justify-start lg:justify-end w-full">
                                 <li>React</li>
                                 <li>Tailwind CSS</li>
                                 <li>Node.js</li>
                                 <li>MongoDB</li>
                             </ul>
                             <div class="flex items-center gap-4">
-                                <a href="#" class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"><i class="fa-brands fa-github text-2xl"></i></a>
-                                <a href="#" class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"><i class="fa-solid fa-up-right-from-square text-2xl"></i></a>
+                                <a href="#"
+                                    class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"><i
+                                        class="fa-brands fa-github text-2xl"></i></a>
+                                <a href="#"
+                                    class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"><i
+                                        class="fa-solid fa-up-right-from-square text-2xl"></i></a>
                             </div>
                         </div>
                     </div>
@@ -288,25 +422,39 @@
                     <div class="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-12 project-card relative">
                         <div class="w-full lg:w-3/5 overflow-hidden rounded-xl shadow-xl group">
                             <div class="relative w-full pb-[60%]">
-                                <img src="https://images.unsplash.com/photo-1540350394557-8d14678e7f91?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Finance Tracking App" class="absolute inset-0 w-full h-full object-cover origin-center group-hover:scale-105 transition-transform duration-700">
-                                <div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-300"></div>
+                                <img src="https://images.unsplash.com/photo-1540350394557-8d14678e7f91?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                                    alt="Finance Tracking App"
+                                    class="absolute inset-0 w-full h-full object-cover origin-center group-hover:scale-105 transition-transform duration-700">
+                                <div
+                                    class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-300">
+                                </div>
                             </div>
                         </div>
                         <div class="w-full lg:w-2/5 flex flex-col items-start text-left relative z-10">
                             <p class="text-primary font-medium mb-2">Featured Project</p>
-                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 hover:text-primary transition-colors"><a href="#">Wallet - Finance Tracker</a></h3>
-                            <div class="bg-slate-100 dark:bg-slate-800 p-6 rounded-xl shadow-md mb-6 lg:-mr-16 w-full lg:w-[calc(100%+4rem)] z-10 border border-slate-200 dark:border-slate-700">
-                                <p class="text-slate-600 dark:text-slate-300">A personal finance tracker allowing users to log expenses, set budgets, and visualize their spending habits over time with interactive charts.</p>
+                            <h3
+                                class="text-2xl font-bold text-slate-900 dark:text-white mb-6 hover:text-primary transition-colors">
+                                <a href="#">Wallet - Finance Tracker</a></h3>
+                            <div
+                                class="bg-slate-100 dark:bg-slate-800 p-6 rounded-xl shadow-md mb-6 lg:-mr-16 w-full lg:w-[calc(100%+4rem)] z-10 border border-slate-200 dark:border-slate-700">
+                                <p class="text-slate-600 dark:text-slate-300">A personal finance tracker allowing users
+                                    to log expenses, set budgets, and visualize their spending habits over time with
+                                    interactive charts.</p>
                             </div>
-                            <ul class="flex flex-wrap gap-4 text-sm font-medium text-slate-500 dark:text-slate-400 mb-8 justify-start w-full">
+                            <ul
+                                class="flex flex-wrap gap-4 text-sm font-medium text-slate-500 dark:text-slate-400 mb-8 justify-start w-full">
                                 <li>Vue.js</li>
                                 <li>Chart.js</li>
                                 <li>Firebase</li>
                                 <li>CSS Modules</li>
                             </ul>
                             <div class="flex items-center gap-4">
-                                <a href="#" class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"><i class="fa-brands fa-github text-2xl"></i></a>
-                                <a href="#" class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"><i class="fa-solid fa-up-right-from-square text-2xl"></i></a>
+                                <a href="#"
+                                    class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"><i
+                                        class="fa-brands fa-github text-2xl"></i></a>
+                                <a href="#"
+                                    class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"><i
+                                        class="fa-solid fa-up-right-from-square text-2xl"></i></a>
                             </div>
                         </div>
                     </div>
@@ -315,29 +463,44 @@
                     <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 project-card relative">
                         <div class="w-full lg:w-3/5 overflow-hidden rounded-xl shadow-xl group">
                             <div class="relative w-full pb-[60%]">
-                                <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Portfolio Template" class="absolute inset-0 w-full h-full object-cover origin-center group-hover:scale-105 transition-transform duration-700">
-                                <div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-300"></div>
+                                <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                                    alt="Portfolio Template"
+                                    class="absolute inset-0 w-full h-full object-cover origin-center group-hover:scale-105 transition-transform duration-700">
+                                <div
+                                    class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-300">
+                                </div>
                             </div>
                         </div>
-                        <div class="w-full lg:w-2/5 flex flex-col items-start lg:items-end text-left lg:text-right relative z-10">
+                        <div
+                            class="w-full lg:w-2/5 flex flex-col items-start lg:items-end text-left lg:text-right relative z-10">
                             <p class="text-primary font-medium mb-2">Featured Project</p>
-                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 hover:text-primary transition-colors"><a href="#">DevFolio Template</a></h3>
-                            <div class="bg-slate-100 dark:bg-slate-800 p-6 rounded-xl shadow-md mb-6 lg:-ml-16 w-full lg:w-[calc(100%+4rem)] z-10 border border-slate-200 dark:border-slate-700">
-                                <p class="text-slate-600 dark:text-slate-300">A clean, easily customizable developer portfolio template specifically designed for speed, SEO, and great developer experience.</p>
+                            <h3
+                                class="text-2xl font-bold text-slate-900 dark:text-white mb-6 hover:text-primary transition-colors">
+                                <a href="#">DevFolio Template</a></h3>
+                            <div
+                                class="bg-slate-100 dark:bg-slate-800 p-6 rounded-xl shadow-md mb-6 lg:-ml-16 w-full lg:w-[calc(100%+4rem)] z-10 border border-slate-200 dark:border-slate-700">
+                                <p class="text-slate-600 dark:text-slate-300">A clean, easily customizable developer
+                                    portfolio template specifically designed for speed, SEO, and great developer
+                                    experience.</p>
                             </div>
-                            <ul class="flex flex-wrap gap-4 text-sm font-medium text-slate-500 dark:text-slate-400 mb-8 justify-start lg:justify-end w-full">
+                            <ul
+                                class="flex flex-wrap gap-4 text-sm font-medium text-slate-500 dark:text-slate-400 mb-8 justify-start lg:justify-end w-full">
                                 <li>HTML/SCSS</li>
                                 <li>JavaScript</li>
                                 <li>GSAP</li>
                                 <li>Vite</li>
                             </ul>
                             <div class="flex items-center gap-4">
-                                <a href="#" class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"><i class="fa-brands fa-github text-2xl"></i></a>
-                                <a href="#" class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"><i class="fa-solid fa-up-right-from-square text-2xl"></i></a>
+                                <a href="#"
+                                    class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"><i
+                                        class="fa-brands fa-github text-2xl"></i></a>
+                                <a href="#"
+                                    class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"><i
+                                        class="fa-solid fa-up-right-from-square text-2xl"></i></a>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
@@ -350,36 +513,104 @@
                     <div class="w-24 h-1 bg-primary mt-4 rounded-full"></div>
                 </div>
 
-                <div class="relative border-l-2 border-slate-200 dark:border-slate-700 ml-3 md:ml-0 md:max-w-3xl md:mx-auto">
-                    
+                <div
+                    class="relative border-l-2 border-slate-200 dark:border-slate-700 ml-3 md:ml-0 md:max-w-3xl md:mx-auto">
+
                     <!-- Exp Item 1 -->
                     <div class="mb-12 ml-8 relative gsap-fade-up delay-1">
-                        <span class="absolute -left-10 w-4 h-4 bg-primary rounded-full border-4 border-white dark:border-slate-900"></span>
+                        <span
+                            class="absolute -left-10 w-4 h-4 bg-primary rounded-full border-4 border-white dark:border-slate-900"></span>
                         <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Full Stack Developer <span class="text-primary">@ TechNova Solutions</span></h3>
-                            <span class="text-sm font-medium text-slate-500 dark:text-slate-400 mt-1 md:mt-0">Jan 2023 - Present</span>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Full Stack Developer <span
+                                    class="text-primary">@ TechNova Solutions</span></h3>
+                            <span class="text-sm font-medium text-slate-500 dark:text-slate-400 mt-1 md:mt-0">Jan 2023 -
+                                Present</span>
                         </div>
-                        <ul class="list-disc text-slate-600 dark:text-slate-400 marker:text-primary space-y-2 pl-4 text-base">
-                            <li>Spearheaded the UI redesign of the legacy dashboard using React and Tailwind CSS, improving load time by 30%.</li>
-                            <li>Developed scalable REST APIs using Express/Node.js, integrating with complex PostgreSQL databases.</li>
-                            <li>Mentored junior developers and instituted code review best practices across the frontend team.</li>
+                        <ul
+                            class="list-disc text-slate-600 dark:text-slate-400 marker:text-primary space-y-2 pl-4 text-base">
+                            <li>Spearheaded the UI redesign of the legacy dashboard using React and Tailwind CSS,
+                                improving load time by 30%.</li>
+                            <li>Developed scalable REST APIs using Express/Node.js, integrating with complex PostgreSQL
+                                databases.</li>
+                            <li>Mentored junior developers and instituted code review best practices across the frontend
+                                team.</li>
                         </ul>
                     </div>
 
                     <!-- Exp Item 2 -->
                     <div class="ml-8 relative gsap-fade-up delay-2">
-                        <span class="absolute -left-10 w-4 h-4 bg-slate-300 dark:bg-slate-600 rounded-full border-4 border-white dark:border-slate-900"></span>
+                        <span
+                            class="absolute -left-10 w-4 h-4 bg-slate-300 dark:bg-slate-600 rounded-full border-4 border-white dark:border-slate-900"></span>
                         <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Junior Web Developer <span class="text-primary">@ WebSpire Agency</span></h3>
-                            <span class="text-sm font-medium text-slate-500 dark:text-slate-400 mt-1 md:mt-0">Jun 2022 - Dec 2022</span>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Junior Web Developer <span
+                                    class="text-primary">@ WebSpire Agency</span></h3>
+                            <span class="text-sm font-medium text-slate-500 dark:text-slate-400 mt-1 md:mt-0">Jun 2022 -
+                                Dec 2022</span>
                         </div>
-                        <ul class="list-disc text-slate-600 dark:text-slate-400 marker:text-primary space-y-2 pl-4 text-base">
-                            <li>Built and maintained responsive corporate websites for 10+ clients using HTML, CSS, JavaScript, and CMS platforms.</li>
-                            <li>Collaborated with design teams in Figma to ensure pixel-perfect implementation of UI designs.</li>
-                            <li>Optimized web assets and implemented SEO best practices, resulting in a 15% increase in organic traffic for client sites.</li>
+                        <ul
+                            class="list-disc text-slate-600 dark:text-slate-400 marker:text-primary space-y-2 pl-4 text-base">
+                            <li>Built and maintained responsive corporate websites for 10+ clients using HTML, CSS,
+                                JavaScript, and CMS platforms.</li>
+                            <li>Collaborated with design teams in Figma to ensure pixel-perfect implementation of UI
+                                designs.</li>
+                            <li>Optimized web assets and implemented SEO best practices, resulting in a 15% increase in
+                                organic traffic for client sites.</li>
                         </ul>
                     </div>
 
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-24 bg-slate-50 dark:bg-slate-900/80">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center gap-4 mb-16 justify-center flex-col gsap-fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Certifications &
+                        Milestones</h2>
+                    <div class="w-24 h-1 bg-primary mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 gsap-fade-up delay-1">
+                    <!-- Cert 1 -->
+                    <div
+                        class="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-all group hover:-translate-y-1">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="p-4 bg-primary/10 text-primary rounded-xl group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-certificate text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-1">Oracle PL/SQL
+                                    Certification</h3>
+                                <p class="text-slate-500 dark:text-slate-400 text-sm mb-3 font-medium">Oracle • Achieved
+                                </p>
+                                <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">Demonstrated
+                                    expertise in writing PL/SQL applications, managing databases, and optimizing query
+                                    performance.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cert 2 / Milestone -->
+                    <div
+                        class="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-all group hover:-translate-y-1">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="p-4 bg-primary/10 text-primary rounded-xl group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-server text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-1">Local Server
+                                    Administration</h3>
+                                <p class="text-slate-500 dark:text-slate-400 text-sm mb-3 font-medium">Independent
+                                    Project</p>
+                                <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">Successfully
+                                    hosted Internet Information Services (IIS) on my personal computer to generate,
+                                    test, and manage local reports efficiently.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -388,28 +619,40 @@
         <section id="contact" class="py-32 bg-white dark:bg-slate-900/50">
             <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <p class="text-primary font-medium mb-4 gsap-fade-up">What's Next?</p>
-                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-6 gsap-fade-up delay-1">Get In Touch</h2>
+                <h2
+                    class="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-6 gsap-fade-up delay-1">
+                    Get In Touch</h2>
                 <p class="text-lg text-slate-600 dark:text-slate-400 mb-12 gsap-fade-up delay-2 max-w-xl mx-auto">
-                    Although I'm currently not looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                    Although I'm currently not looking for any new opportunities, my inbox is always open. Whether you
+                    have a question or just want to say hi, I'll try my best to get back to you!
                 </p>
-                
-                <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 shadow-xl gsap-fade-up delay-3 text-left">
-                    <form onsubmit="event.preventDefault(); alert('Message sent successfully! (Mock Action)');" class="space-y-6">
+
+                <div
+                    class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 shadow-xl gsap-fade-up delay-3 text-left">
+                    <form onsubmit="event.preventDefault(); alert('Message sent successfully! (Mock Action)');"
+                        class="space-y-6">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                                <label for="name" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Name</label>
-                                <input type="text" id="name" required class="w-full px-4 py-3 rounded-lg bg-surfaceLight dark:bg-surfaceDark border border-slate-300 dark:border-slate-600 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all dark:text-white">
+                                <label for="name"
+                                    class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Name</label>
+                                <input type="text" id="name" required
+                                    class="w-full px-4 py-3 rounded-lg bg-surfaceLight dark:bg-surfaceDark border border-slate-300 dark:border-slate-600 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all dark:text-white">
                             </div>
                             <div>
-                                <label for="email" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Email</label>
-                                <input type="email" id="email" required class="w-full px-4 py-3 rounded-lg bg-surfaceLight dark:bg-surfaceDark border border-slate-300 dark:border-slate-600 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all dark:text-white">
+                                <label for="email"
+                                    class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Email</label>
+                                <input type="email" id="email" required
+                                    class="w-full px-4 py-3 rounded-lg bg-surfaceLight dark:bg-surfaceDark border border-slate-300 dark:border-slate-600 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all dark:text-white">
                             </div>
                         </div>
                         <div>
-                            <label for="message" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Message</label>
-                            <textarea id="message" rows="5" required class="w-full px-4 py-3 rounded-lg bg-surfaceLight dark:bg-surfaceDark border border-slate-300 dark:border-slate-600 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all dark:text-white resize-none"></textarea>
+                            <label for="message"
+                                class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Message</label>
+                            <textarea id="message" rows="5" required
+                                class="w-full px-4 py-3 rounded-lg bg-surfaceLight dark:bg-surfaceDark border border-slate-300 dark:border-slate-600 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all dark:text-white resize-none"></textarea>
                         </div>
-                        <button type="submit" class="w-full py-4 bg-primary hover:bg-primaryDark text-white font-bold rounded-lg transition-all shadow-lg hover:shadow-primary/50 hover-glow">
+                        <button type="submit"
+                            class="w-full py-4 bg-primary hover:bg-primaryDark text-white font-bold rounded-lg transition-all shadow-lg hover:shadow-primary/50 hover-glow">
                             Send Message
                         </button>
                     </form>
@@ -421,16 +664,20 @@
     <!-- Footer -->
     <footer class="py-8 text-center">
         <div class="flex justify-center space-x-6 mb-6">
-            <a href="#" class="text-slate-400 hover:text-primary transition-colors hover:-translate-y-1 transform inline-block">
+            <a href="#"
+                class="text-slate-400 hover:text-primary transition-colors hover:-translate-y-1 transform inline-block">
                 <i class="fa-brands fa-github text-3xl"></i>
             </a>
-            <a href="#" class="text-slate-400 hover:text-primary transition-colors hover:-translate-y-1 transform inline-block">
+            <a href="#"
+                class="text-slate-400 hover:text-primary transition-colors hover:-translate-y-1 transform inline-block">
                 <i class="fa-brands fa-linkedin text-3xl"></i>
             </a>
-            <a href="#" class="text-slate-400 hover:text-primary transition-colors hover:-translate-y-1 transform inline-block">
+            <a href="#"
+                class="text-slate-400 hover:text-primary transition-colors hover:-translate-y-1 transform inline-block">
                 <i class="fa-brands fa-twitter text-3xl"></i>
             </a>
-            <a href="#" class="text-slate-400 hover:text-primary transition-colors hover:-translate-y-1 transform inline-block">
+            <a href="#"
+                class="text-slate-400 hover:text-primary transition-colors hover:-translate-y-1 transform inline-block">
                 <i class="fa-solid fa-envelope text-3xl"></i>
             </a>
         </div>
@@ -442,4 +689,5 @@
     <!-- JS -->
     <script src="script.js"></script>
 </body>
+
 </html>
