@@ -17,7 +17,7 @@
     <link rel="manifest" href="src/Logo/site.webmanifest">
 
     <!-- Tailwind CSS (Play CDN for quick setup + Custom Config) -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="src/tailwind/3.4.17"></script>
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -42,11 +42,11 @@
     </script>
 
     <!-- Icons: FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="src/css/all.min.css">
 
     <!-- GSAP for Animations -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="src/js/gsap.min.js" defer></script>
+    <script src="src/js/ScrollTrigger.min.js" defer></script>
 </head>
 
 <body
@@ -108,7 +108,7 @@
                         <i class="fa-solid fa-sun text-xl hidden dark:block"></i>
                         <i class="fa-solid fa-moon text-xl block dark:hidden"></i>
                     </button>
-                    <button id="mobileMenuBtn"
+                    <button aria-label="Button to open mobile menu" id="mobileMenuBtn"
                         class="text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white">
                         <i class="fa-solid fa-bars text-3xl"></i>
                     </button>
@@ -289,19 +289,19 @@
                         <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-6 text-center">Frontend</h3>
                         <div class="space-y-4">
                             <div class="flex items-center gap-3 p-3 bg-slate-50 dark:bg-slate-700 rounded-lg hover:-translate-y-1 transition-transform duration-300 group">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-8 h-8 group-hover:grayscale transition-all">
+                                <img src="src/svg/html5-original.svg" alt="HTML5" class="w-8 h-8 group-hover:grayscale transition-all">
                                 <span class="text-sm font-medium">HTML</span>
                             </div>
                             <div class="flex items-center gap-3 p-3 bg-slate-50 dark:bg-slate-700 rounded-lg hover:-translate-y-1 transition-transform duration-300 group">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-8 h-8 group-hover:grayscale transition-all">
+                                <img src="src/svg/css3-original.svg" alt="CSS3" class="w-8 h-8 group-hover:grayscale transition-all">
                                 <span class="text-sm font-medium">CSS</span>
                             </div>
                             <div class="flex items-center gap-3 p-3 bg-slate-50 dark:bg-slate-700 rounded-lg hover:-translate-y-1 transition-transform duration-300 group">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-8 h-8 group-hover:grayscale transition-all">
+                                <img src="src/svg/javascript-original.svg" alt="JavaScript" class="w-8 h-8 group-hover:grayscale transition-all">
                                 <span class="text-sm font-medium">JS</span>
                             </div>
                             <div class="flex items-center gap-3 p-3 bg-slate-50 dark:bg-slate-700 rounded-lg hover:-translate-y-1 transition-transform duration-300 group">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-8 h-8 group-hover:grayscale transition-all">
+                                <img src="src/svg/react-original.svg" alt="React" class="w-8 h-8 group-hover:grayscale transition-all">
                                 <span class="text-sm font-medium">React</span>
                             </div>
                         </div>
@@ -312,7 +312,7 @@
                         <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-6 text-center">Backend</h3>
                         <div class="space-y-4">
                             <div class="flex items-center gap-3 p-3 bg-slate-50 dark:bg-slate-700 rounded-lg hover:-translate-y-1 transition-transform duration-300 group">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-8 h-8 group-hover:grayscale transition-all">
+                                <img src="src/svg/python-original.svg" alt="Python" class="w-8 h-8 group-hover:grayscale transition-all">
                                 <span class="text-sm font-medium">Python</span>
                             </div>
                         </div>
@@ -323,7 +323,7 @@
                         <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-6 text-center">Database</h3>
                         <div class="space-y-4">
                             <div class="flex items-center gap-3 p-3 bg-slate-50 dark:bg-slate-700 rounded-lg hover:-translate-y-1 transition-transform duration-300 group">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle" class="w-8 h-8 group-hover:grayscale transition-all">
+                                <img src="src/svg/oracle-original.svg" alt="Oracle" class="w-8 h-8 group-hover:grayscale transition-all">
                                 <span class="text-sm font-medium">Oracle</span>
                             </div>
                         </div>
@@ -334,7 +334,7 @@
                         <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-6 text-center">Application</h3>
                         <div class="space-y-4">
                             <div class="flex items-center gap-3 p-3 bg-slate-50 dark:bg-slate-700 rounded-lg hover:-translate-y-1 transition-transform duration-300 group">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="w-8 h-8 group-hover:grayscale transition-all">
+                                <img src="src/svg/vscode-original.svg" alt="VS Code" class="w-8 h-8 group-hover:grayscale transition-all">
                                 <span class="text-sm font-medium">VS Code</span>
                             </div>
                         </div>
