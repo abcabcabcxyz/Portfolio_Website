@@ -4,12 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Full Stack Developer</title>
+    <title>Yugal Tawlare | Full Stack Developer</title>
     <meta name="description"
         content="Professional portfolio of a Full Stack Developer with 2 years of experience. Explore my projects, skills, and experience.">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="src/Logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/Logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/Logo/favicon-16x16.png">
+    <link rel="manifest" href="src/Logo/site.webmanifest">
 
     <!-- Tailwind CSS (Play CDN for quick setup + Custom Config) -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -40,8 +45,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- GSAP for Animations -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
 </head>
 
 <body
@@ -189,7 +194,7 @@
                     <div class="relative group">
                         <!-- Decorative border -->
                         <div class="absolute inset-0 border-2 border-primary rounded-2xl translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300 -z-10"></div>
-                        <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        <img src="src/Images/pexels-photo-1181244.webp"
                             alt="Developer Workspace"
                             class="rounded-2xl shadow-2xl object-cover w-full h-[350px] md:h-[450px] group-hover:grayscale transition-all duration-500">
                         <div class="absolute -top-8 right-0 hidden lg:block w-64 rounded-[2rem] border border-slate-200 dark:border-slate-700 bg-white/90 dark:bg-slate-900/90 p-5 shadow-2xl backdrop-blur-xl transition-transform duration-300 hover:-translate-y-1">
@@ -342,16 +347,16 @@
         <section id="projects" class="py-24 bg-white dark:bg-slate-900/50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col items-center text-center mb-16 gsap-fade-up">
-                    <p class="text-primary font-medium tracking-wide uppercase mb-3">Featured Work</p>
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Selected Projects</h2>
-                    <p class="mt-4 text-slate-600 dark:text-slate-400 max-w-2xl">A selection of recent projects showcasing design polish, technical depth, and performance-first execution.</p>
+                    <p class="text-primary font-medium tracking-wide uppercase mb-3">Work</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Projects Deployed</h2>
+                    <p class="mt-4 text-slate-600 dark:text-slate-400 max-w-2xl">Explore a collection of production-ready applications and technical projects.</p>
                 </div>
 
                 <div class="grid gap-8 lg:grid-cols-3">
                     <!-- Project Card 1 -->
                     <div class="group rounded-[2rem] overflow-hidden bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-shadow duration-300">
                         <div class="relative overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                            <img src="src/Images/photo-1551288049-bebda4e38f71_ixlib=rb-4.webp"
                                 alt="E-Commerce Dashboard"
                                 class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/10 to-transparent"></div>
@@ -376,7 +381,7 @@
                     <!-- Project Card 2 -->
                     <div class="group rounded-[2rem] overflow-hidden bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-shadow duration-300">
                         <div class="relative overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1540350394557-8d14678e7f91?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                            <img src="src/Images/photo-1540350394557-8d14678e7f91.webp"
                                 alt="Finance Tracking App"
                                 class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/10 to-transparent"></div>
@@ -401,7 +406,7 @@
                     <!-- Project Card 3 -->
                     <div class="group rounded-[2rem] overflow-hidden bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-shadow duration-300">
                         <div class="relative overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                            <img src="src/Images/photo-1522542550221-31fd19575a2d_ixlib=rb-4.webp"
                                 alt="Portfolio Template"
                                 class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/10 to-transparent"></div>
