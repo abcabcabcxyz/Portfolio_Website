@@ -71,8 +71,117 @@ body {
     50% { opacity: 0; }
 }
 
+/* Typewriter span to prevent layout shift */
+#typewriter {
+    display: inline-block;
+    min-width: 6ch;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    direction: ltr;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    #typewriter {
+        min-width: 4ch;
+    }
+}
+
 /* Hide elements before GSAP shows them */
 .gsap-reveal {
     opacity: 0;
     visibility: hidden;
+}
+
+/* Experience Timeline Styles */
+.experience-container {
+    position: relative;
+}
+
+.timeline-dot {
+    position: relative;
+}
+
+.timeline-card {
+    border-radius: 1.5rem;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark .timeline-card {
+    border-color: #334155;
+}
+
+.timeline-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+}
+
+.timeline-card p,
+.timeline-card h3,
+.timeline-card span {
+    color: inherit;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .hero-text h1 {
+        font-size: 4.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    section[id] {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    /* Reduce heading margins on mobile */
+    section > div > div:first-child {
+        margin-bottom: 12px !important;
+    }
+
+    .mb-16 {
+        margin-bottom: 2rem !important;
+    }
+
+    .mb-12 {
+        margin-bottom: 1rem !important;
+    }
+
+    .gap-8 {
+        gap: 1rem !important;
+    }
+
+    .space-y-12 > * + * {
+        margin-top: 1.5rem !important;
+    }
+
+    .space-y-24 > * + * {
+        margin-top: 2rem !important;
+    }
+
+    .gsap-feature-cards {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .timeline-card,
+    .timeline-content,
+    .project-card,
+    .group.rounded-[2rem] {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .experience-container {
+        padding-left: 0;
+    }
+    
 }
