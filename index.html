@@ -9,12 +9,14 @@
         content="Professional portfolio of a Full Stack Developer with 2 years of experience. Explore my projects, skills, and experience.">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 
     <link rel="apple-touch-icon" sizes="180x180" href="src/Logo/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="src/Logo/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="src/Logo/favicon-16x16.png">
     <link rel="manifest" href="src/Logo/site.webmanifest">
+    
+    <link rel="stylesheet" href="style.min.css">
     
     <!-- Tailwind CSS (Play CDN for quick setup + Custom Config) -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -42,7 +44,14 @@
     </script>
 
     <!-- Icons: FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+
+    <!-- ❌ REMOVE this -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+
+    <!-- ✅ ADD this instead -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
     <!-- GSAP for Animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
